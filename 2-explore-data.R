@@ -16,6 +16,7 @@ names(data2)
 # now let's make some summaries of the information
 # how many fish were observed on each transect? 
 transect.count <- data2 %>% 
+  filter()
   group_by(Site, Transect) %>% 
   summarize(n.fish = sum(Count))
 
